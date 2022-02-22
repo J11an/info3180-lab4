@@ -90,8 +90,8 @@ def get_image(filename):
 def files():
     if not session.get('logged_in'):
         abort(401)
-    imageList = get_uploaded_images()
-    return render_template("files.html",imageList=imageList)
+    imglst = get_uploaded_images()
+    return render_template("files.html",imglst=imglst)
 
 
 ###

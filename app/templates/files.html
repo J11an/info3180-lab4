@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+        <ul class="pictures">
+            {% for img in imglst: %}
+            <li>
+                
+                <img class = "player" src="{{ url_for('get_image', filename=img) }}" />
+            
+            </li>
+            {% endfor %}
+        </ul>
+
+{% endblock%}
